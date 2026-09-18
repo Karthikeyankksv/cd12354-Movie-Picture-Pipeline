@@ -6,8 +6,7 @@ RUN useradd -u 1000 -M app
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     build-essential \
-    libpcre3 \
-    libpcre3-dev \
+        libpcre2-dev \
     libssl-dev \
     libffi-dev \
     && rm -rf /var/lib/apt/lists/* \
